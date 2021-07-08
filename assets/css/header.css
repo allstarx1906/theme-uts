@@ -185,7 +185,7 @@ ul{
     vertical-align: middle;
 }
 
-.nav-bar li{
+.nav-bar>li{
     margin: 10px;
 }
 
@@ -223,7 +223,6 @@ ul{
 .pc-more{
     float: right;
     font-size: 0;
-    padding;
 }
 
 #header-nav{
@@ -259,4 +258,50 @@ ul{
 }
 .theme-custom-site-header {
     height: 100px;
+}
+.site-nav-item a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.site-nav-item a{
+    position: relative;
+}
+.site-nav-item:hover a::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    transition: all 0.3s;
+}
+
+
+.sub-nav{
+    display: none;
+    border: 1px;
+    border-color: #CCC;
+    border-style: solid;
+    background-color: #ffffff;
+    position: absolute;
+    min-width: 168px;
+}
+
+.sub-nav li{
+    border-bottom: 1px solid #CCC;
+    padding: 10px;
+}
+
+.sub-nav li:last-child{
+    border: none;
+}
+
+.site-nav-item:hover .sub-nav{
+    display: block;
 }
