@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/fonts/icons/font-awesome-4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="assets/fonts/icons/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/css/slider.js" defer></script>
 </head>
 <body>
     <div class="header">
@@ -86,9 +88,61 @@
             </div>
         </div>
     </div>
-    <div class="main" style="height: 1000px; background-color: bisque;">
-        <span class="slider-mark"></span>
-        <div id="spacial-offer"></div>
+    <div class="main">
+        <div class="slider-mark">   
+            <div class="slides">
+                <input type="radio" class="carousel-item" id="radio1" name="radio-btn" value="1">
+                <input type="radio" class="carousel-item" id="radio2" name="radio-btn" value="2">
+                <input type="radio" class="carousel-item" id="radio3" name="radio-btn" value="3">
+                <input type="radio" class="carousel-item" id="radio4" name="radio-btn" value="4">
+                <div class="slide first">
+                    <img src="assets/img/slider-1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/img/slider-2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/img/slider-3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/img/slider-4.jpg" alt="">
+                </div>
+                <div class="navigation-manual">
+                    <label  for="radio1" class="manual-btn manual-btn1"></label>
+                    <label  for="radio2" class="manual-btn manual-btn2"></label>
+                    <label  for="radio3" class="manual-btn manual-btn3"></label>
+                    <label  for="radio4" class="manual-btn manual-btn4"></label>
+                </div>
+            </div> 
+            <div class="buy-now">
+                <button class="buy-now-btn">Mua ngay</button>
+            </div>
+        </div>
+        <div id="special-offer" > 
+            <div class="grid-uni-form wrapper">
+                <div class="grid-item">
+                    <a href="" class="hovereffect">
+                        <img class="img-responsive" src="https://admin.staging.uptoseconds.com/assets/placeholders-images/img-home/ad-2.jpg" alt="">
+                        <span class="span-item">Trang phục công sở</span>
+                        <div class="overlay"></div>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="" class="hovereffect">
+                        <img class="img-responsive" src="https://admin.staging.uptoseconds.com/assets/placeholders-images/img-home/ad-2.jpg" alt="">
+                        <span class="span-item">Trang phục hàng ngày</span>
+                        <div class="overlay"></div>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="" class="hovereffect">
+                        <img class="img-responsive" src="https://admin.staging.uptoseconds.com/assets/placeholders-images/img-home/ad-2.jpg" alt="">
+                        <span class="span-item">Phụ kiện thời trang</span>
+                        <div class="overlay"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
         <div id="featured-products"></div>
         <div id="the-collection"></div>
         <div id="widget-lookbook"></div>

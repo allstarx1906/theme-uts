@@ -12,26 +12,6 @@ a{
 b{
     font-size: 14px;
 }
-.col {
-
-}
-
-.row{
-
-}
-
-.row-twins{
-    width: 50%;
-}
-
-.row-triple{
-    width: 33.33333%;
-}
-
-.row-penta{
-    width: 20%;
-}
-
 .text-center{
     text-align: center;
 }
@@ -291,6 +271,7 @@ ul{
     background-color: #ffffff;
     position: absolute;
     min-width: 168px;
+    z-index: 99999;
 }
 
 .sub-nav li{
